@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>util.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="util-0.1.js"></script>
+  </head>
+  
+  <body>
+  	<form id="myform">
+  		<input type="text" id="a" value="123"/>
+  		<select id="c">
+  			<option value="1">1212</option>
+  			<option value="2">13132</option>
+  		</select>
+  		<input type="text" id="ad" value="123s"/>
+  		<input type="button" value="测试是否修改" onclick="chk();" />
+  	</form>
+    <script type="text/javascript">
+    	function chk(){
+    		var ar=new Array();
+    		ar.push('a');
+    		ar.push('c');
+    		alert(Util.isFormChanged('myform',ar));
+    	}
+    </script>
+  </body>
+</html>
